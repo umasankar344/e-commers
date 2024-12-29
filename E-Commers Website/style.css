@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+#main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    padding: 20px 50px;
+    
+}
+.product img{
+    height: 350px;
+    width: 300px;
+    
+}
+.product{
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 8px grey,inset -5px -5px 8px grey;
+    margin-top: 20px;
+}
+.product:hover{
+    transition: ease;
+    transform: scale(1.05);
+    transition-duration: 1.5;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100px;
+    box-shadow:  10px 10px 15px black;
+}
+header img{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+}
+.img1{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+footer{
+    height: 90px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    transition:ease;
+    transform: scale(1.1);
+    transition-duration: 1.5;
+    cursor: pointer;
+}
+.logInDiv{
+    height: 300px;
+    width: 260px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    gap: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+}
+.logInDiv button{
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+.logInDiv button:hover{
+    transition:ease;
+    transform: scale(1.1);
+    transition-duration: 1.5;
+    cursor: pointer;
+}
